@@ -1,0 +1,28 @@
+" vundle configuration
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'JuliaEditorSupport/julia-vim'
+call vundle#end()
+
+" general settings
+filetype plugin on
+set number
+set nowrap sidescroll=1
+let mapleader = ","
+packadd termdebug
+nnoremap <leader>d :tabe GDB<CR>:view<CR>:Termdebug<CR><c-w>w<c-w>w<c-w>H
+nnoremap <leader>s :Step<CR>
+nnoremap <leader>n :Next<CR>
+nnoremap <leader>c :Continue<CR>
+let gutentags_ctags_exclude = ["build*"]
+let gutentags_ctags_tagfile = ".tags"
+set list
+set listchars=tab:‧\ ,trail:…,extends:‣
+noremap <leader>t :set noexpandtab<CR>
+noremap <leader>w /\<\\|[A-Z_]<CR>
+set previewheight=20
+let g:tex_flavor = 'latex'
