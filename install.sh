@@ -1,3 +1,3 @@
 ln -sb $(pwd)/vimrc ~/.vimrc
-rm -r ~/.vim/after/ftplugin
+unlink ~/.vim/after/ftplugin
 ln -s $(pwd)/ftplugin ~/.vim/after
