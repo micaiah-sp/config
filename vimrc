@@ -12,6 +12,7 @@ call vundle#end()
 filetype plugin on
 set number
 set nowrap sidescroll=1
+set showcmd
 let mapleader = ","
 packadd termdebug
 nnoremap <leader>d :tabe GDB<CR>:view<CR>:Termdebug<CR><c-w>w<c-w>w<c-w>H
