@@ -24,6 +24,6 @@ let gutentags_ctags_tagfile = ".tags"
 set list
 set listchars=tab:‧\ ,trail:…,extends:‣
 noremap <leader>t :set noexpandtab<CR>
-noremap <leader>w /\<\\|[A-Z_]<CR>
+noremap <leader>w /\<\\|[A-Z_0-9]<CR>
 set previewheight=20
 let g:tex_flavor = 'latex'
