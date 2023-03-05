@@ -6,6 +6,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'JuliaEditorSupport/julia-vim'
+Plugin 'vim-python/python-syntax'
 call vundle#end()
 
 " general settings
@@ -28,3 +29,4 @@ noremap <leader>t :set noexpandtab<CR>
 noremap <leader>w /\<\\|[A-Z_0-9]<CR>
 set previewheight=20
 let g:tex_flavor = 'latex'
+let g:python_highlight_all = 1
