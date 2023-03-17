@@ -33,3 +33,5 @@ let g:python_highlight_all = 1
 let g:python_highlight_operators = 0
 let g:python_version_2 = 0
 let g:python_highlight_func_calls = 0
+set wildmode=longest,list,full
+set wildmenu
