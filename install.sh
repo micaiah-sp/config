@@ -5,6 +5,9 @@ fi
 if [ ! -d ~/.vim/after ]; then
     mkdir ~/.vim/after
 fi
+if [ ! -d ~/.vim/spelling ]; then
+    mkdir ~/.vim/spelling
+fi
 if [ -e ~/.vim/after/ftplugin ]; then
     echo "error: after/ftplugin exists"
     exit
