@@ -7,3 +7,4 @@ export LIBRARY_PATH=$LIBRARY_PATH:$TECPLOT_LIB_PATH:~/.local/lib
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$TECPLOT_LIB_PATH:~/.local/lib
 export PYTHONPATH=$PYTHONPATH:~/.local/lib
 alias tec360=$TECPLOT_DIR/bin/tec360
+source ~/.localbashrc

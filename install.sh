@@ -1,3 +1,4 @@
+touch ~/.localbashrc
 ln -sb $(pwd)/vimrc ~/.vimrc
 if [ ! -d ~/.vim ]; then
     mkdir ~/.vim
