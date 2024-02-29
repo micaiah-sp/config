@@ -1,5 +1,8 @@
 from matplotlib import font_manager
 import matplotlib.pyplot
+import numpy
+
+numpy.set_printoptions(linewidth = 250)
 
 for style in ["Regular", "Bold", "Italic", "BoldItalic"]:
     font_manager.fontManager.addfont(f"/usr/share/fonts/truetype/noto/NotoSans-{style}.ttf")
