@@ -10,3 +10,4 @@ noremap <leader>t o\begin{table}<CR><Tab>\centering<CR><Tab>\caption{}<CR><Tab>\
 noremap <leader>r :!pdflatex -interaction=nonstopmode %<CR>
 noremap <leader>b :!biber <C-r>%<BS><BS><BS><BS><CR>
 syn region texZone start="\\\(acr\a\)\|\(href\)*{" end="}\|%stopzone\>" transparent contains=@NoSpell,texStatement
+syn match texComment "%.*$" contains=@texCommentGroup,@NoSpell
