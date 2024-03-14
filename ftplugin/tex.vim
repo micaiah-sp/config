@@ -9,5 +9,5 @@ noremap <leader>s o<Tab>\begin{subfigure}{.45\linewidth}<CR><Tab><Tab>\includegr
 noremap <leader>t o\begin{table}<CR><Tab>\centering<CR><Tab>\caption{}<CR><Tab>\label{}<CR><Tab>\begin{tabular}{}<CR><Tab>\end{tabular}<CR>\end{table}<CR><Esc>
 noremap <leader>r :!pdflatex -interaction=nonstopmode %<CR>
 noremap <leader>b :!biber <C-r>%<BS><BS><BS><BS><CR>
-syn region texZone start="\\\(acr\a\)\|\(href\)*{" end="}\|%stopzone\>" transparent contains=@NoSpell,texStatement
+syn region texZone start="\\\(\(acr\a*\)\|\([ch]ref\)\|url\){" end="}\|%stopzone\>" transparent contains=@NoSpell,texStatement
 syn match texComment "%.*$" contains=@texCommentGroup,@NoSpell
