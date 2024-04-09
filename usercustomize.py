@@ -8,7 +8,6 @@ for style in ["Regular", "Bold", "Italic", "BoldItalic"]:
     font_manager.fontManager.addfont(f"/usr/share/fonts/truetype/noto/NotoSans-{style}.ttf")
 font_manager.fontManager.addfont(f"/usr/share/fonts/truetype/noto/NotoSansMath-Regular.ttf")
 font_manager.fontManager.addfont(f"/usr/share/fonts/truetype/noto/NotoSansMono-Regular.ttf")
-font_manager.fontManager.addfont(f"/usr/share/fonts/truetype/lyx/cmsy10.ttf")
 
 matplotlib.pyplot.rcParams["font.family"] = "sans-serif"
 matplotlib.pyplot.rcParams["font.sans-serif"] = ["Noto Sans Math"]
