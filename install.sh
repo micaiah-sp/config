@@ -14,7 +14,7 @@ if [ -e ~/.vim/after/ftplugin ]; then
     exit
 fi
 if [ -e ~/.vim/after/ftdetect ]; then
-    echo "error: after/ftplugin exists"
+    echo "error: after/ftdetect exists"
     exit
 fi
 ln -s $(pwd)/ftplugin ~/.vim/after
@@ -26,3 +26,4 @@ fi
 vim +PluginInstall +qall
 
 ln -s $(pwd)/usercustomize.py $(python3 -m site --user-site)
+python3 -m venv ~/main_py_env

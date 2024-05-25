@@ -5,6 +5,7 @@ export LIBRARY_PATH=$LIBRARY_PATH:~/.local/lib
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.local/lib
 alias tec360=/usr/local/tecplot/360ex_2022r2/bin/tec360
 source ~/.localbashrc
+source ~/main_py_env/bin/activate
 
 rept() {
     for (( i=0; i<$2; ++i ))
