@@ -1,11 +1,10 @@
 export EDITOR=vim
 export PATH=$PATH:~/.local/bin
-export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH::~/.local/include
-export LIBRARY_PATH=$LIBRARY_PATH:~/.local/lib
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.local/lib
 alias tec360=/usr/local/tecplot/360ex_2022r2/bin/tec360
 source ~/.localbashrc
-source ~/main_py_env/bin/activate
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+source ~/.main_venv/bin/activate
+export VIRTUAL_ENV_DISABLE_PROMPT=""
 
 rept() {
     for (( i=0; i<$2; ++i ))
