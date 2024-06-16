@@ -1,4 +1,19 @@
 touch ~/.localbashrc
+if [ ! -e ~/.local/ ]; then
+    mkdir ~/.local/
+fi
+if [ ! -e ~/.local/bin ]; then
+    mkdir ~/.local/bin
+fi
+if [ ! -e ~/.local/include ]; then
+    mkdir ~/.local/include
+fi
+if [ ! -e ~/.local/lib ]; then
+    mkdir ~/.local/lib
+fi
+if [ ! -e ~/.local/share ]; then
+    mkdir ~/.local/share
+fi
 ln -sb $(pwd)/vimrc ~/.vimrc
 if [ ! -d ~/.vim ]; then
     mkdir ~/.vim
