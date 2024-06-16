@@ -1,6 +1,9 @@
 export EDITOR=vim
 export PATH=$PATH:~/.local/bin
-alias tec360=/usr/local/tecplot/360ex_2022r2/bin/tec360
+export LIBRARY_PATH=$LIBRARY_PATH:~/.local/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.local/lib
+export INCLUDE_PATH=$INCLUDE_PATH:~/.local/include
+export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:~/.local/include
 source ~/.localbashrc
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 source ~/.main_venv/bin/activate
