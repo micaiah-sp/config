@@ -1,4 +1,9 @@
-touch ~/.localbashrc
+if [ ! -e ~/.localbashrc ]; then
+    cp ~/.bashrc ~/.bashrc_config_backup
+    echo "source ~/.mybashrc" >> ~/.bashrc
+    touch ~/.localbashrc
+fi
+source ~/.bashrc
 if [ ! -e ~/.local/ ]; then
     mkdir ~/.local/
 fi
