@@ -1,0 +1,6 @@
+sudo apt install python3-full
+sudo apt install build-essential
+sudo apt install vim
+sudo apt install git
+sudo apt install exuberant-ctags
+sudo update-alternatives --config editor
