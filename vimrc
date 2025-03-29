@@ -23,7 +23,7 @@ nnoremap <leader>c :Continue<CR>
 let gutentags_ctags_exclude = ["build*"]
 let gutentags_ctags_tagfile = ".tags"
 set list
-set listchars=tab:‧\ ,trail:…,extends:‣
+set listchars=tab:├─,trail:…,extends:‣
 set mps+=<:>
 noremap <leader>t :set noexpandtab<CR>
 noremap <leader>w /\<\\|[A-Z_0-9]<CR>
