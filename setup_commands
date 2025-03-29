@@ -4,3 +4,5 @@ sudo apt install vim
 sudo apt install git
 sudo apt install exuberant-ctags
 sudo update-alternatives --config editor
+network-manager-openconnect
+network-manager-openconnect-gnome
