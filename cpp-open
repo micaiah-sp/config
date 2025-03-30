@@ -1,0 +1,12 @@
+#! /usr/bin/env python3
+import os
+from subprocess import run
+import sys
+
+name = sys.argv[1]
+args = ["vim", "-O"]
+names = [("include", f"{name}.hpp"), ("libhexed", f"{name}.cpp"), ("test", f"test_{name}.cpp")]
+for pair in names:
+    if pair[1] in os.listdir(pair[0]):
+        args.append("/".join(pair))
+run(args)
