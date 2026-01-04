@@ -1,12 +1,14 @@
 #! /usr/bin/env python3
-import os
 from subprocess import run
 import sys
 
-name = sys.argv[1]
-args = ["vim", "-O"]
-names = [("include", f"{name}.hpp"), ("libhexed", f"{name}.cpp"), ("test", f"test_{name}.cpp")]
-for pair in names:
-    if pair[1] in os.listdir(pair[0]):
-        args.append("/".join(pair))
+name = sys.argv[-1]
+args = ["vim", "-O", f"include/{name}.hpp"]
+if len(sys.argv) == 3:
+    assert sys.argv[1] in ["--header", "-h"], "The only supported option is `--header`, aka `-h`."
+elif len(sys.argv) == 2:
+    args.append(f"libhexed/{name}.cpp")
+else:
+    raise Exception(f"`cpp-open` takes 1 or 2 arguments.")
+#args.append(f"test/test_{name}.cpp")
 run(args)

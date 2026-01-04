@@ -1,0 +1,35 @@
+#! /usr/bin/env python3
+import sys
+
+if len(sys.argv) == 3:
+    assert sys.argv[1] in ["--header", "-h"]
+    name = sys.argv[2]
+    header = True
+elif len(sys.argv) == 2:
+    name = sys.argv[1]
+    header = False
+else:
+    raise Exception("`cpp-create` takes 1 or 2 arguments.")
+
+with open(f"include/{name}.hpp", "w") as f:
+    f.write(f"""
+#ifndef HEXED_{name.upper()}_HPP_
+#define HEXED_{name.upper()}_HPP_
+
+namespace hexed {{
+
+
+}}
+#endif
+"""[1:])
+
+if not header:
+    with open (f"libhexed/{name}.cpp", "w") as f:
+        f.write(f"""
+#include <hexed/{name}.hpp>
+
+namespace hexed {{
+
+
+}}
+"""[1:])
