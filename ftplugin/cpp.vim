@@ -5,3 +5,4 @@ syn match Constant "\(\(\<\d\+\(\.\d*\)\=\)\|\(\.\d\+\)\)\(\(e[-+]\=\d\+\)\=\)"
 command -nargs=1 -bar Open :tabe include/<args>.hpp | :rightbelow :vs libhexed/<args>.cpp | :wincmd w
 command -nargs=1 -bar Create :!cpp-create <args>
 command -nargs=1 Cropen :Create <args> | :Open <args>
+command -nargs=1 Crho :Create -h <args> | :Open <args>
