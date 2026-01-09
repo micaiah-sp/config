@@ -10,5 +10,5 @@ elif len(sys.argv) == 2:
     args.append(f"libhexed/{name}.cpp")
 else:
     raise Exception(f"`cpp-open` takes 1 or 2 arguments.")
-#args.append(f"test/test_{name}.cpp")
+args.append(f"test/test_{name}.cpp")
 run(args)
